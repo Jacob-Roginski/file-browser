@@ -14,10 +14,36 @@
   <main>
     <p>Hi there, this is my index.html file</p>
   </main>
+<style>
+  /* Make the page take full height and use flexbox */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
 
-  <footer>
-    <p>&copy; 2025 My Website</p>
-  </footer>
+/* Let main content grow between header and footer */
+main {
+  flex: 1;
+}
+
+/* Align header with main container */
+header, main {
+  max-width: 960px; /* or same width as table */
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Footer fixed at the bottom */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+  </style>
 <main class="container">
   <h1>File Browser</h1>
 
@@ -132,5 +158,8 @@
     td[data-size]::before { content: "File size"; } 
   }
 </style>
+   <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
 </body>
 </html>
