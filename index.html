@@ -1,98 +1,169 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jacob Roginski</title> 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@latest/css/pico.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-<main class="container">
-   <header>
-    <h1>How did you end up here</h1>
-     <p>Hi there, this is my index.html file</p>
-  </header>
-  <h1>File Browser</h1>
-
-  <table role="table" aria-label="Files list">
-    <caption>Files in this directory</caption>
-    <!-- Makes the titles of the table -->
-    <thead>
-      <tr>
-        <th scope="col">File icon</th>
-        <th scope="col">File name</th>
-        <th scope="col">File type</th>
-        <th scope="col">File size</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td aria-hidden="true"><i class="fa-solid fa-file-image"></i></td>
-        <td><a href="helloworld.png">hello_world.png</a></td>
-        <td>PNG image</td>
-        <td data-size="20480">20 KB</td>
-      </tr>
-
-      <tr>
-        <td aria-hidden="true"><i class="fa-solid fa-code"></i></td>
-        <td><a href="HelloWorld.html">hello_world.html</a></td>
-        <td>HTML document</td>
-        <td data-size="4096">4 KB</td>
-      </tr>
-
-      <tr>
-        <td aria-hidden="true"><i class="fa-regular fa-file-lines"></i></td>
-        <td><a href="helloworld.json">hello_world.json</a></td>
-        <td>JSON</td>
-        <td data-size="72">72 B</td>
-      </tr>
-
-      <tr>
-        <td aria-hidden="true"><i class="fa-solid fa-file-lines"></i></td>
-        <td><a href="helloworld.txt">hello_world.txt</a></td>
-        <td>Plain text</td>
-        <td data-size="14">14 B</td>
-      </tr>
-
-      <tr>
-        <td aria-hidden="true"><i class="fa-solid fa-file-pdf"></i></td>
-        <td><a href="hello_world.pdf">hello_world.pdf</a></td>
-        <td>PDF document</td>
-        <td data-size="102400">100 KB</td>
-      </tr>
-    </tbody>
-  </table>
-
-<ul>
-  <li>Observation 1: <ol>The html file is formatted and doesn't show the raw file</ol></li>
-  <li>Observation 2: <ol>The json file is shown as a raw file in the browser when opened</ol></li>
-  <li>Observation 3: <ol>The pdf has to be downloaded and shows up as a file in the browser and the same as the png and they could not be created directly</ol></li>
-</ul>
-</main>
-
-<style>
-main {
-  flex: 1;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-}
   
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  th, td {
-    padding: 0.6rem 0.75rem;
-    text-align: left;
-    vertical-align: middle;
-  }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Jacob Roginski
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
   
-</style>
-   <footer>
-    <p>&copy; 2025 Jacob Roginski</p>
-  </footer>
-</body>
+  <body>
+    <main class="container">
+      <header>
+        <h1>
+          How did you end up here
+        </h1>
+        <p>
+          Hi there, this is my index.html file
+        </p>
+      </header>
+      <h1>
+        File Browser
+      </h1>
+      <table role="table" aria-label="Files list">
+        <caption>
+          Files in this directory
+        </caption>
+        <!-- Makes the titles of the table -->
+        <thead>
+          <tr>
+            <th scope="col">
+              File icon
+            </th>
+            <th scope="col">
+              File name
+            </th>
+            <th scope="col">
+              File type
+            </th>
+            <th scope="col">
+              File size
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td aria-hidden="true">
+              <i class="fa-solid fa-file-image">
+              </i>
+            </td>
+            <td>
+              <a href="helloworld.png">
+                hello_world.png
+              </a>
+            </td>
+            <td>
+              PNG image
+            </td>
+            <td data-size="20480">
+              20 KB
+            </td>
+          </tr>
+          <tr>
+            <td aria-hidden="true">
+              <i class="fa-solid fa-code">
+              </i>
+            </td>
+            <td>
+              <a href="HelloWorld.html">
+                hello_world.html
+              </a>
+            </td>
+            <td>
+              HTML document
+            </td>
+            <td data-size="4096">
+              4 KB
+            </td>
+          </tr>
+          <tr>
+            <td aria-hidden="true">
+              <i class="fa-regular fa-file-lines">
+              </i>
+            </td>
+            <td>
+              <a href="helloworld.json">
+                hello_world.json
+              </a>
+            </td>
+            <td>
+              JSON
+            </td>
+            <td data-size="72">
+              72 B
+            </td>
+          </tr>
+          <tr>
+            <td aria-hidden="true">
+              <i class="fa-solid fa-file-lines">
+              </i>
+            </td>
+            <td>
+              <a href="helloworld.txt">
+                hello_world.txt
+              </a>
+            </td>
+            <td>
+              Plain text
+            </td>
+            <td data-size="14">
+              14 B
+            </td>
+          </tr>
+          <tr>
+            <td aria-hidden="true">
+              <i class="fa-solid fa-file-pdf">
+              </i>
+            </td>
+            <td>
+              <a href="hello_world.pdf">
+                hello_world.pdf
+              </a>
+            </td>
+            <td>
+              PDF document
+            </td>
+            <td data-size="102400">
+              100 KB
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>
+          Observation 1:
+          <ol>
+            The html file is formatted and doesn't show the raw file
+          </ol>
+        </li>
+        <li>
+          Observation 2:
+          <ol>
+            The json file is shown as a raw file in the browser when opened
+          </ol>
+        </li>
+        <li>
+          Observation 3:
+          <ol>
+            The pdf has to be downloaded and shows up as a file in the browser and
+            the same as the png and they could not be created directly
+          </ol>
+        </li>
+      </ul>
+    </main>
+    <style>
+      main { flex: 1; } footer { text-align: center; padding: 1rem; } table
+      { width: 100%; border-collapse: collapse; } th, td { padding: 0.6rem 0.75rem;
+      text-align: left; vertical-align: middle; }
+    </style>
+    <footer>
+      <p>
+        &copy; 2025 Jacob Roginski
+      </p>
+    </footer>
+  </body>
+
 </html>
